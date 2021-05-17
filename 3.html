@@ -16,21 +16,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sun_Diary</title>
+     <!--V2: 글꼴 추가-->
+     <link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@700&display=swap" rel="stylesheet"> 
+     <!--V2: 네비게이션 바 배경 색-->
+     <style>
+       .page-header {
+      font-family: 'Gaegu', cursive; 
+      background-color: lightyellow;
+      text-align: center; padding: 20px;} 
+      #home:hover {background-color:rgb(253, 226, 203);} 
+      #산경:hover {background-color:rgb(253, 226, 203);}
+      #컴공:hover {background-color:rgb(253, 226, 203);}
+      #diary:hover {background-color:rgb(253, 226, 203);}
+    </style>
 </head>
 <body>
+  <div class="page-header"><!--다이어리 페이지임을 페이지 제목을 통해 포현하였습니다.--> <!--위치 변경, 중앙 정렬-->
+    <h1>📙Sun_Diary📙</h1>
+  </div>
     <div class="container">
         <br>
         <ul class="nav nav-tabs">
-            <li role="presentation"><a href="#">Home</a></li>
-            <li role="presentation"><a href="1.html">산경</a></li>
-            <li role="presentation"><a href="2.html">컴공</a></li>
-            <li role="presentation" class="active"><a href="3.html">Diary</a></li>
+            <li role="presentation"><a href="#" id="home">Home</a></li>
+            <li role="presentation"><a href="1.html" id="산경">산경</a></li>
+            <li role="presentation"><a href="2.html" id="컴공">컴공</a></li>
+            <li role="presentation" class="active"><a href="3.html" id="diary">Diary</a></li>
           </ul>
           
         <form action="전송받을 대상">
-            <div class="page-header">  <!--다이어리 페이지임을 페이지 제목을 통해 포현하였습니다.-->
-                <h1>📙Sun_Diary📙</h1>
-              </div>
+            
             
             <br>
             제목: <input type="text" name="diarytitle"> 
